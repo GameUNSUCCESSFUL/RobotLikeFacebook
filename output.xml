@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170613 13:54:56.819" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\saita\Google Drive\The New Order 2017\Git[2017]\RobotLikeFacebook\LikeFace.robot" id="s1" name="LikeFace">
+<test id="s1-t1" name="1.Go To homepage">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${HOMEPAGE}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170613 13:54:57.308" level="INFO">Opening browser 'chrome' to base url 'http://www.facebook.com'</msg>
+<status status="PASS" endtime="20170613 13:55:02.488" starttime="20170613 13:54:57.308"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170613 13:55:03.660" starttime="20170613 13:55:02.488"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${LOCATION USERNAME}</arg>
+<arg>${USERNAME}</arg>
+</arguments>
+<msg timestamp="20170613 13:55:03.661" level="INFO">Typing text 'saytan_potong@hotmail.com' into text field 'id=email'</msg>
+<status status="PASS" endtime="20170613 13:55:03.822" starttime="20170613 13:55:03.661"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${LOCATION PASSWORD}</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20170613 13:55:03.822" level="INFO">Typing text 'lockon_staros' into text field 'id=pass'</msg>
+<status status="PASS" endtime="20170613 13:55:03.921" starttime="20170613 13:55:03.822"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${BUTTON LOGIN}</arg>
+</arguments>
+<msg timestamp="20170613 13:55:03.922" level="INFO">Clicking element 'id=u_0_q'.</msg>
+<status status="PASS" endtime="20170613 13:55:07.340" starttime="20170613 13:55:03.921"></status>
+</kw>
+<status status="PASS" endtime="20170613 13:55:07.341" critical="yes" starttime="20170613 13:54:57.308"></status>
+</test>
+<test id="s1-t2" name="2.Like facebook">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>css=a.UFILikeLink</arg>
+</arguments>
+<msg timestamp="20170613 13:55:07.343" level="INFO">Clicking element 'css=a.UFILikeLink'.</msg>
+<status status="PASS" endtime="20170613 13:55:07.773" starttime="20170613 13:55:07.342"></status>
+</kw>
+<status status="PASS" endtime="20170613 13:55:07.773" critical="yes" starttime="20170613 13:55:07.341"></status>
+</test>
+<status status="PASS" endtime="20170613 13:55:07.774" starttime="20170613 13:54:56.822"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="LikeFace" pass="2">LikeFace</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
